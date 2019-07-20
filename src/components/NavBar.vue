@@ -4,7 +4,7 @@
       КОМПАНИЯ ПРОЕКТИРОВАНИЯ И СТРОИТЕЛЬСТВА ЗДАНИЙ ИЗ ПРОФИЛЬНОГО БРУСА
     </div>
     <div class="logo">
-      <svg width="985" height="474" viewBox="0 0 985 474" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 985 474" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M305.715 375.5L493.956 14.1531L679.359 375.5H305.715Z" stroke="white" stroke-opacity="0.7" stroke-width="13"/>
         <path d="M688 238.25C688 346.297 599.653 433.964 490.567 434C380.602 431.034 293 346.19 293 238.25C293 130.311 384.884 43 494.135 43C603.15 43 688 130.078 688 238.25Z" stroke="white" stroke-opacity="0.7" stroke-width="10"/>
         <path d="M15.0041 244.326L493.994 7.25545L970.022 243.815L492 466.828L15.0041 244.326Z" stroke="white" stroke-opacity="0.7" stroke-width="13"/>
@@ -39,6 +39,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  svg {
+    width: 54.3vw;
+    height: 49.8vh;
+  }
 }
 
 .nav-items {

@@ -35,8 +35,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 14.5vw;
-  height: 14.5vw;
+  width: 14.5vh;
+  height: 14.5vh;
   border: 2px solid rgba(241, 166, 53, 0.7);
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -47,8 +47,8 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 13vw;
-  height: 13vw;
+  width: 13vh;
+  height: 13vh;
   border: 3px solid rgba(241, 166, 53, 0.7);
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -56,8 +56,8 @@ export default {
 }
 
 .btn {
-  width: 11.5vw;
-  height: 11.5vw;
+  width: 11.5vh;
+  height: 11.5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,9 +65,20 @@ export default {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 90px;
   color: $j-white;
+  transition: 0.3s;
 
   .arrow {
-    padding-bottom: 2.3vw;
-  }
+    padding-bottom: 1.3vw;
+
+    &::selection {
+      background: transparent;
+    }
+  }  
+
+  &:hover {
+    background:  rgba(241, 166, 53, 0.8);
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }  
 }
 </style>
