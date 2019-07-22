@@ -29,6 +29,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .f-border {
@@ -73,12 +74,12 @@ export default {
     &::selection {
       background: transparent;
     }
-  }  
+  }
 
   &:hover {
     background:  rgba(241, 166, 53, 0.8);
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
     cursor: pointer;
-  }  
+  }
 }
 </style>

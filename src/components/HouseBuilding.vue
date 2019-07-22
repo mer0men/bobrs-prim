@@ -1,38 +1,73 @@
 <template>
   <div class="house-building">
-    <h2 class="house-building__header">домостроение</h2>
-    <div class="slider">
-      <div id="item-1" class="item"></div>
-      <div id="item-2" class="item"></div>
-      <div id="item-3" hidden class="item"></div>
-      <div id="item-4" hidden class="item"></div>
-      <slider-btn style="right: -13%; top: 20%" :direction="'right'"></slider-btn>
-      <slider-btn style="right: -13%; bottom: 20%" :direction="'left'"></slider-btn>
-    </div>
+    <h2 @click="next" class="house-building__header">домостроение</h2>
+    <slick ref="slick" :options="slickOptions">
+        <div class="item">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534410/bobrs-prim/P1010031_nxnzjy.jpg">
+        </div>
 
+        <div class="item">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534407/bobrs-prim/IMG_1031_ekpkyr.jpg">
+        </div>
+
+        <div class="item">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534409/bobrs-prim/IMG_5526_yyrsbl.jpg">
+        </div>
+
+        <div class="item">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534407/bobrs-prim/IMG_5524_c0cxjo.jpg">
+        </div>
+    </slick>
+    <div @click="next">
+      <slider-btn  style="right: 5%; top: 25%;" :direction="'right'"></slider-btn>
+    </div>
+    
+    <div @click="prev">
+      <slider-btn  style="right: 5%; bottom: 25%" :direction="'left'"></slider-btn>
+    </div>
   </div>
 </template>
 
 <script>
+import Slick from 'vue-slick'
 import SliderBtn from '@/components/SliderButton'
+
 
 export default {
   components: {
-    SliderBtn
+    SliderBtn,
+    Slick
   },
-  data: {
-    sliderItems: [],
-    slideCount: 4
+  data() {
+    return {
+      sliderItems: [],
+      slideCount: 4,
+      slickOptions: {
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false
+      }
+    }
   },
-  mounted() {
-    fo
+  methods: {
+    next() {
+      console.log('asd')
+      this.$refs.slick.next();
+    },
+    prev() {
+      this.$refs.slick.prev();
+    },
   }
 }
 </script>
 
 <style lang="scss">
+@import 'node_modules/slick-carousel/slick/slick.scss';
+
 .house-building {
-  height: 1000px;
+  height: 800px;
+  position: relative;
 }
 
 .house-building__header {
@@ -40,21 +75,15 @@ export default {
   padding-left: 10.5vw;
 }
 
-.slider {
-  position: relative;
-  padding: 1rem;
-  display: flex;
+.slick-slider {
   width: 85%;
-  justify-content: space-around;
-  align-items: center;
+}
 
-
-  .item {
-    width: 700px;
-    height: 700px;
-    background: red;
-  }
-
-
+.item {
+  display: flex !important;
+  justify-content: center;
+  align-content: center;
+  width: 700px;
+  height: 700px;
 }
 </style>
