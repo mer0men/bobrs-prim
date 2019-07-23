@@ -4,9 +4,21 @@
       КОМПАНИЯ ПРОЕКТИРОВАНИЯ И СТРОИТЕЛЬСТВА ЗДАНИЙ ИЗ ПРОФИЛЬНОГО БРУСА
     </div>
     <div class="nav-items">
-      <a class="nav-item" href="#">о нас</a>
-      <a class="nav-item" href="#">домостроение</a>
-      <a class="nav-item" href="#">бары</a>
+      <a class="nav-item" href="#" v-scroll-to="{
+        el: '.about',
+        offset: -100,
+        duration: 1100
+      }">о нас</a>
+      <a class="nav-item" href="#" v-scroll-to="{
+        el: '.house-building',
+        offset: -100,
+        duration: 1100
+      }">домостроение</a>
+      <a class="nav-item" href="#" v-scroll-to="{
+        el: '.bars',
+        offset: -100,
+        duration: 1100
+      }">бары</a>
       <a class="nav-item" href="#">предметы интерьера</a>
       <a class="nav-item" href="#">лестницы</a>
       <a class="nav-item" href="#">беседки</a>

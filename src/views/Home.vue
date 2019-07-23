@@ -3,6 +3,7 @@
     <nav-bar></nav-bar>
     <about></about>
     <house-building></house-building>
+    <bars></bars>
   </div>
 </template>
 
@@ -10,13 +11,22 @@
 import NavBar from '@/components/NavBar'
 import About from '@/components/About'
 import HouseBuilding from '@/components/HouseBuilding'
+import Bars from '@/components/Bars'
 
 export default {
   name: 'home',
   components: {
     NavBar,
     About,
-    HouseBuilding
+    HouseBuilding,
+    Bars
+  },
+  data () {
+    return {
+      scrollY: 0
+    }
+  },
+  methods: {    
   }
 }
 </script>
