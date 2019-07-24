@@ -1,9 +1,17 @@
 <template>
   <div class="home">
     <nav-bar></nav-bar>
-    <about></about>
-    <house-building></house-building>
-    <bars></bars>
+    <div class="main-blocks">
+      <about></about>
+      <house-building></house-building>
+      <house-items></house-items>
+      <laders></laders>
+      <summer-houses></summer-houses>
+      <bars></bars>
+    </div>
+    <partners></partners>
+    <contacts></contacts>
+    <app-footer></app-footer>
   </div>
 </template>
 
@@ -12,6 +20,12 @@ import NavBar from '@/components/NavBar'
 import About from '@/components/About'
 import HouseBuilding from '@/components/HouseBuilding'
 import Bars from '@/components/Bars'
+import HouseItems from '@/components/HouseItems'
+import Laders from '@/components/Laders'
+import SummerHouses from '@/components/SummerHouses'
+import Partners from '@/components/Partners'
+import Contacts from '@/components/Contacts'
+import AppFooter from '@/components/Footer'
 
 export default {
   name: 'home',
@@ -19,24 +33,59 @@ export default {
     NavBar,
     About,
     HouseBuilding,
-    Bars
+    Bars,
+    HouseItems,
+    Laders,
+    SummerHouses,
+    Partners,
+    Contacts,
+    AppFooter
   },
   data () {
     return {
       scrollY: 0
     }
   },
-  methods: {    
+  methods: {
   }
 }
 </script>
 
 <style lang="scss">
 .home {
-  height: 9250px;
   width: 100%;
-  background: url(../assets/homeBg.png);
+
+  .block {
+    padding: 70px;
+  }
+}
+
+.main-blocks {
+  background: url(../assets/mainBg.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
+  margin-top: -115px;
+  padding-top: 150px;
+
+  img {
+    border: 3px solid rgba(64, 64, 64, 0.5);
+    box-sizing: border-box;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.item {
+  position: relative;
+  display: flex !important;
+  justify-content: center;
+  align-content: center;
+  width: 65vw;
+  height: auto;
+  transition: 0.7s;
+
+  img {
+    width: 95%;
+    height: 95%;
+  }
 }
 </style>

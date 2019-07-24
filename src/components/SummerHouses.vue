@@ -1,18 +1,18 @@
 <template>
-  <div ref="hb" v-scroll="handleScroll" id="hb" class="house-building block">
-    <h2 class="house-building__header">домостроение</h2>
+  <div ref="sh" v-scroll="handleScroll" id="hb" class="summer-houses block">
+    <h2 class="summer-houses__header">беседки</h2>
     <slick ref="slick" :options="slickOptions">
         <div class="item">
-          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534410/bobrs-prim/P1010031_nxnzjy.jpg">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534399/bobrs-prim/DSC00121_uh5b9x.jpg">
         </div>
         <div class="item">
-          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534407/bobrs-prim/IMG_1031_ekpkyr.jpg">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534398/bobrs-prim/%D0%A4%D0%BE%D1%82%D0%BE0188_fnafch.jpg">
         </div>
         <div class="item">
-          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534409/bobrs-prim/IMG_5526_yyrsbl.jpg">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534399/bobrs-prim/21072007068_l3bmxk.jpg">
         </div>
         <div class="item">
-          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534407/bobrs-prim/IMG_5524_c0cxjo.jpg">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534410/bobrs-prim/P1010023_egtmvu.jpg">
         </div>
     </slick>
     <div @click="next">
@@ -45,7 +45,8 @@ export default {
         autoplay: true,
         autoplaySpeed: 5000,
         speed: 700
-      }
+      },
+      scrollY: this.$parent.scrollY
     }
   },
   methods: {
@@ -56,6 +57,7 @@ export default {
       this.$refs.slick.prev()
     },
     handleScroll: function (evt, el) {
+      console.log(window.scrollY)
       if (window.scrollY > this.posY) {
         el.setAttribute(
           'style',
@@ -67,25 +69,23 @@ export default {
   },
   computed: {
     posY () {
-      return this.$refs.hb.getBoundingClientRect().top - screen.height / 3
+      return this.$refs.sh.getBoundingClientRect().top - screen.height / 4
     }
   }
 }
 </script>
 
-<style lang="scss" scope="this api replaced by slot-scope in 2.5.0+">
+<style lang="scss">
 @import 'node_modules/slick-carousel/slick/slick.scss';
 
-.house-building {
+.summer-houses {
   position: relative;
   opacity: 0;
   transition: 0.7s;
   transform: translateY(-30%);
 
-  .slick-current {
-    .item {
-      transform: scale(1);
-    }
+  .item {
+    transform: scale(0.9);
   }
 
   .active {
@@ -98,7 +98,7 @@ export default {
   }
 }
 
-.house-building__header {
+.summer-houses__header {
   text-align: left;
   padding-left: 10.5vw;
 }

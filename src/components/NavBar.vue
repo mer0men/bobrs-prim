@@ -15,20 +15,53 @@
         duration: 1100
       }">домостроение</a>
       <a class="nav-item" href="#" v-scroll-to="{
+        el: '.house-items',
+        offset: -100,
+        duration: 1100
+      }">предметы интерьера</a>
+      <a class="nav-item" href="#" v-scroll-to="{
+        el: '.laders',
+        offset: -100,
+        duration: 1100
+      }">лестницы</a>
+      <a class="nav-item" href="#" v-scroll-to="{
+        el: '.summer-houses',
+        offset: -100,
+        duration: 1100
+      }">беседки</a>
+      <a class="nav-item" href="#" v-scroll-to="{
+        el: '.partners',
+        offset: -100,
+        duration: 1100
+      }">наши партнеры</a>
+      <a class="nav-item" href="#" v-scroll-to="{
         el: '.bars',
         offset: -100,
         duration: 1100
       }">бары</a>
-      <a class="nav-item" href="#">предметы интерьера</a>
-      <a class="nav-item" href="#">лестницы</a>
-      <a class="nav-item" href="#">беседки</a>
-      <a class="nav-item" href="#">наши партнеры</a>
+      <a class="nav-item" href="#" v-scroll-to="{
+        el: '.partners',
+        offset: -100,
+        duration: 1100
+      }">партнеры</a>
+      <a class="nav-item" href="#" v-scroll-to="{
+        el: '.contacts',
+        offset: -100,
+        duration: 1100
+      }">контакты</a>
     </div>
   </div>
 </template>
 
 <style lang="scss">
 @import '../assets/variables.scss';
+
+.nav-bar {
+  background: url(../assets/headerBg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+}
 
 .title {
   display: flex;
@@ -44,13 +77,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 81px;
 
   .nav-item {
     color: $j-white;
     text-decoration: none;
     position: relative;
     transition: 0.4s;
-    font-size: 27px;
+    font-size: 22px;
 
     &::after {
       content:  '';
