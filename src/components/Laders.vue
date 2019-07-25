@@ -26,7 +26,8 @@ export default {
         slidesToScroll: 1,
         arrows: false,
         centerMode: true,
-        autoplay: true,
+        autoplay: true,        
+        focusOnSelect: true,
         autoplaySpeed: 2500,
         speed: 700
       }

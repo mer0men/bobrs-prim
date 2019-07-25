@@ -40,7 +40,8 @@ export default {
       slickOptions: {
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 2,        
+        draggable: false,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 5000,

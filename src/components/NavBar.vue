@@ -45,8 +45,7 @@
         duration: 1100
       }">партнеры</a>
       <a class="nav-item" href="#" v-scroll-to="{
-        el: '.contacts',
-        offset: -100,
+        el: '.footer',
         duration: 1100
       }">контакты</a>
     </div>
@@ -58,7 +57,7 @@
 
 .nav-bar {
   background: url(../assets/headerBg.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100% auto;
   position: relative;
 }

@@ -9,12 +9,24 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background: url(./assets/mapBg.png);
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  div:focus {
+    outline: none !important;
+  }
 }
 
 @font-face {
     font-family: 'VarSacrumTitle';
     src: url('./assets/VerSacrumTitle.ttf');
 }
+
+@font-face {
+    font-family: 'Worksans';
+    src: url('./assets/Worksans.ttf');
+}
+
 
 #app {
   font-family: 'VarSacrumTitle', sans-serif;

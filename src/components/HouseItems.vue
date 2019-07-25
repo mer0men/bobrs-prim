@@ -25,7 +25,9 @@ export default {
         infinite: true,
         slidesToScroll: 1,
         arrows: false,
-        centerMode: true,
+        draggable: false,
+        centerMode: true,        
+        focusOnSelect: true,
         autoplay: true,
         autoplaySpeed: 1700,
         speed: 700

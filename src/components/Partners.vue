@@ -37,10 +37,14 @@ export default {
   @import '../assets/variables.scss';
 
   .partners {
+    font-size: 24px;
+    line-height: 31px;
     background: url(../assets/partnersBg.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    margin-top: -1px;
+    margin-top: -1%;
+    position:relative;
+    z-index: 11;
   }
 
   .list {

@@ -46,14 +46,17 @@ export default {
 .contacts {
   height: 825px;
   background: url(../assets/mapBg.png);
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: 100% auto;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -10px;
+  margin-top: -1%;
   flex-direction: column;
+  position:relative;
+  z-index: 10;
+
 
   .vue-map {
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
