@@ -60,6 +60,9 @@
   background-repeat: repeat-y;
   background-size: 100% auto;
   position: relative;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 .title {

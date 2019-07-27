@@ -30,7 +30,19 @@ export default {
         focusOnSelect: true,
         autoplay: true,
         autoplaySpeed: 1700,
-        speed: 700
+        speed: 700,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false,
+              arrows: false
+            }
+          }
+        ]
       }
     }
   },

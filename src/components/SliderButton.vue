@@ -24,12 +24,16 @@ export default {
 <style lang="scss">
 @import '../assets/variables.scss';
 
+
 .slider-btn {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  @media (max-width: 480px) {
+    display: none; 
+  }
 }
 
 .f-border {
