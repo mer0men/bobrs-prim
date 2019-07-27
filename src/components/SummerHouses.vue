@@ -44,7 +44,19 @@ export default {
         arrows: false,
         autoplay: true,
         autoplaySpeed: 5000,
-        speed: 700
+        speed: 700,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              arrows: false
+            }
+          }
+        ]
       },
       scrollY: this.$parent.scrollY
     }
@@ -95,6 +107,9 @@ export default {
 
   .slick-slider {
     width: 85%;
+    @media (max-width: 480px) {
+      width: 100%; 
+    }  
   }
 }
 

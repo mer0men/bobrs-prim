@@ -7,6 +7,12 @@
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534403/bobrs-prim/DSC01848_sigscl.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534396/bobrs-prim/DSC_0018_hwyvxe.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534410/bobrs-prim/P1010029_2_ygmonu.jpg" alt=""></div>
+      <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534403/bobrs-prim/DSC01848_sigscl.jpg" alt=""></div>
+      <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534396/bobrs-prim/DSC_0018_hwyvxe.jpg" alt=""></div>
+      <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534410/bobrs-prim/P1010029_2_ygmonu.jpg" alt=""></div>
+      <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534403/bobrs-prim/DSC01848_sigscl.jpg" alt=""></div>
+      <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534396/bobrs-prim/DSC_0018_hwyvxe.jpg" alt=""></div>
+      <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534410/bobrs-prim/P1010029_2_ygmonu.jpg" alt=""></div>
     </slick>
   </div>
 </template>
@@ -29,7 +35,19 @@ export default {
         autoplay: true,        
         focusOnSelect: true,
         autoplaySpeed: 2500,
-        speed: 700
+        speed: 700,
+        responsive: [
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false,
+              arrows: false
+            }
+          }
+        ]
       }
     }
   },
@@ -62,16 +80,30 @@ export default {
   .item {
     transition: 0.7s;
     transform: translateY(-9%) scale(0.8);
+    
+    @media (max-width: 480px) {
+      width: 100%;
+      transform: none;
+    }  
   }
 
   .slick-current {
     .item {
       transform: translateY(9%) scale(0.8);
+      @media (max-width: 480px) {
+        width: 100%;
+        transform: none;
+      }
     }
   }
 }
 
 .laders__header {
   padding-left: 10.5vw;
+  @media (max-width: 480px) {
+    text-align: left;
+    width: 100%;
+    transform: none;
+  }  
 }
 </style>

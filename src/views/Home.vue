@@ -54,9 +54,19 @@ export default {
 <style lang="scss">
 .home {
   width: 100%;
+  
+  @media (max-width: 480px) {
+    overflow-y: hidden;
+    background: url(../assets/mobBg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
 
   .block {
     padding: 70px;
+    @media (max-width: 480px) {
+      padding:  30px 10px;
+    }
   }
 }
 
@@ -66,6 +76,13 @@ export default {
   background-size: 100% auto;
   margin-top: -115px;
   padding-top: 150px;
+
+  @media (max-width: 480px) {
+    overflow-y: scroll;
+    background: rgba(0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
 
   img {
     border: 3px solid rgba(64, 64, 64, 0.5);
@@ -79,7 +96,6 @@ export default {
   display: flex !important;
   justify-content: center;
   align-content: center;
-  width: 65vw;
   height: auto;
   transition: 0.7s;
 

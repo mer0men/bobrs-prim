@@ -26,9 +26,16 @@
   background: rgba(255, 255, 255, 0.4);
   box-shadow: inset 7px 7px 15px rgba(255, 255, 255, 0.5);
   padding: 4.6vh 6.9vw;
-
+  
   @media (max-width: 1366px) {
     width: 65vw;
   }
+  
+  @media (max-width: 480px) {
+    width: 90vw;
+    padding: 20px 10px;
+    font-size: 12px;
+  }
+
 }
 </style>
