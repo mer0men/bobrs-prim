@@ -32,7 +32,7 @@ export default {
         slidesToScroll: 1,
         arrows: false,
         centerMode: true,
-        autoplay: true,        
+        autoplay: true,
         focusOnSelect: true,
         autoplaySpeed: 2500,
         speed: 700,
@@ -44,7 +44,8 @@ export default {
               slidesToScroll: 2,
               infinite: true,
               dots: false,
-              arrows: false
+              arrows: false,
+              centerMode: false
             }
           }
         ]
@@ -80,11 +81,11 @@ export default {
   .item {
     transition: 0.7s;
     transform: translateY(-9%) scale(0.8);
-    
+
     @media (max-width: 480px) {
       width: 100%;
       transform: none;
-    }  
+    }
   }
 
   .slick-current {
@@ -104,6 +105,6 @@ export default {
     text-align: left;
     width: 100%;
     transform: none;
-  }  
+  }
 }
 </style>

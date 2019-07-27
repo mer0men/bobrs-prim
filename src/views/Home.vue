@@ -54,11 +54,13 @@ export default {
 <style lang="scss">
 .home {
   width: 100%;
-  
+  overflow-x: hidden;
+
   @media (max-width: 480px) {
     overflow-y: hidden;
     background: url(../assets/mobBg.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100% auto;
   }
 
@@ -76,6 +78,7 @@ export default {
   background-size: 100% auto;
   margin-top: -115px;
   padding-top: 150px;
+  overflow-x: hidden;
 
   @media (max-width: 480px) {
     overflow-y: scroll;

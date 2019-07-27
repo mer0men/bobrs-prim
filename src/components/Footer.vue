@@ -44,10 +44,24 @@
   z-index: 12;
   margin-top: -1%;
   font-family: 'Worksans';
+  flex-wrap: wrap;
+
+  @media (max-width: 1200px) {
+    height: auto;
+  }
 
   .phone {
     position: absolute;
     left: -50px;
+  }
+
+  .footer-logo {
+    svg {
+      @media (max-width: 720px) {
+        height: auto;
+        width: 95%;
+      }
+    }
   }
 
   .info {
@@ -59,6 +73,12 @@
     position: relative;
     grid-template-columns: 1fr 1fr 1fr;
 
+    @media (max-width: 720px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     span {
       padding: 0.5rem;
     }

@@ -24,7 +24,6 @@ export default {
 <style lang="scss">
 @import '../assets/variables.scss';
 
-
 .slider-btn {
   position: absolute;
   display: flex;
@@ -32,7 +31,7 @@ export default {
   align-items: center;
   z-index: 1000;
   @media (max-width: 480px) {
-    display: none; 
+    display: none;
   }
 }
 
