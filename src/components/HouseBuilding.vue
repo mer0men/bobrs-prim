@@ -40,7 +40,7 @@ export default {
       slickOptions: {
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 2,        
+        slidesToScroll: 2,
         draggable: false,
         arrows: false,
         autoplay: true,
@@ -58,7 +58,7 @@ export default {
             }
           }
         ]
-      },
+      }
     }
   },
   methods: {
@@ -109,8 +109,8 @@ export default {
   .slick-slider {
     width: 85%;
     @media (max-width: 480px) {
-      width: 100%; 
-    }    
+      width: 100%;
+    }
   }
 }
 

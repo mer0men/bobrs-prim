@@ -70,9 +70,22 @@ export default {
   opacity: 0;
   transform: translateX(50%);
 
-    .item {
-    transform: scale(0.75)
+  .item {
+    transform: scale(0.75);
+    @media (max-width: 480px) {
+      transform: none;
+    }
   }
+  .slick-current {
+    .item {
+      transform: scale(0.9);
+
+      @media (max-width: 480px) {
+        transform: none;
+      }
+    }
+  }
+
 }
 
 .bars__header {
@@ -80,9 +93,4 @@ export default {
   padding-left: 10.5vw;
 }
 
-.slick-current {
-  .item {
-    transform: scale(0.9);
-  }
-}
 </style>

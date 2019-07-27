@@ -57,6 +57,10 @@ export default {
   position:relative;
   z-index: 10;
 
+  @media (max-width: 1200px) {
+    height: auto;
+    padding: 20px;
+  }
 
   .vue-map {
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
@@ -68,6 +72,11 @@ export default {
     height: 600px;
     position: relative;
     border-radius: 20px;
+
+    @media (max-width: 720px) {
+      height: 400px;
+      width: 90%;
+    }
   }
 }
 </style>

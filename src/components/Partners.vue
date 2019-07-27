@@ -45,6 +45,10 @@ export default {
     margin-top: -1%;
     position:relative;
     z-index: 11;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 
   .list {

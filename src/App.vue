@@ -27,7 +27,6 @@ body, html {
     src: url('./assets/Worksans.ttf');
 }
 
-
 #app {
   font-family: 'VarSacrumTitle', sans-serif;
   -webkit-font-smoothing: antialiased;

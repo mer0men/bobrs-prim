@@ -108,8 +108,8 @@ export default {
   .slick-slider {
     width: 85%;
     @media (max-width: 480px) {
-      width: 100%; 
-    }  
+      width: 100%;
+    }
   }
 }
 
