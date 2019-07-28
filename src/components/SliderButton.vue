@@ -18,7 +18,8 @@ export default {
       required: true
     },
     scrollMethod: {
-      required: false
+      required: false,
+      default: function () { return true }
     }
   }
 }
