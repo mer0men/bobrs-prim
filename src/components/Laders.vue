@@ -14,15 +14,18 @@
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534396/bobrs-prim/DSC_0018_hwyvxe.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534410/bobrs-prim/P1010029_2_ygmonu.jpg" alt=""></div>
     </slick>
+    <gallery-link :type="'laders'"></gallery-link>
   </div>
 </template>
 
 <script>
 import Slick from 'vue-slick'
+import GalleryLink from './GalleryLink'
 
 export default {
   components: {
-    Slick
+    Slick,
+    GalleryLink
   },
   data () {
     return {

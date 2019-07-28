@@ -7,15 +7,18 @@
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534412/bobrs-prim/P1010102_mz3egb.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534395/bobrs-prim/BVB_5056_riqkvn.jpg" alt=""></div>
     </slick>
+    <gallery-link :type="'bars'"></gallery-link>
   </div>
 </template>
 
 <script>
 import Slick from 'vue-slick'
+import GalleryLink from './GalleryLink'
 
 export default {
   components: {
-    Slick
+    Slick,
+    GalleryLink
   },
   data () {
     return {

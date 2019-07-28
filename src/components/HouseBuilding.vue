@@ -21,17 +21,20 @@
     <div @click="prev">
       <slider-btn  style="right: 5%; bottom: 25%" :direction="'left'"></slider-btn>
     </div>
+    <gallery-link :type="'house-building'"></gallery-link>
   </div>
 </template>
 
 <script>
 import Slick from 'vue-slick'
 import SliderBtn from '@/components/SliderButton'
+import GalleryLink from './GalleryLink'
 
 export default {
   components: {
     SliderBtn,
-    Slick
+    Slick,
+    GalleryLink
   },
   data () {
     return {
