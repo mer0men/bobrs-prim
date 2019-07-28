@@ -62,6 +62,22 @@ export default {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% auto;
+
+    &:before {
+      content: '';
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background: url(../assets/mobBg.png) no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
   }
 
   .block {

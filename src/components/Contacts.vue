@@ -62,6 +62,10 @@ export default {
     padding: 20px;
   }
 
+  @media (max-width: 480px) {
+    background: rgba(0, 0, 0, 0);
+  }
+
   .vue-map {
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
     border-radius: 30px;

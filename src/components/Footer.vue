@@ -53,6 +53,9 @@
   .phone {
     position: absolute;
     left: -50px;
+    @media (max-width: 720px) {
+      left: -30px;
+    }
   }
 
   .footer-logo {
