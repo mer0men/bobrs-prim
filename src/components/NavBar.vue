@@ -57,7 +57,7 @@
 
 .nav-bar {
   background: url(../assets/headerBg.png);
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-size: 100% auto;
   position: relative;
   @media (max-width: 480px) {
@@ -79,7 +79,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 81px;
+  flex-wrap: wrap;
+  // padding-bottom: 81px;
+  background: rgba(0, 0, 0, 0.3);
 
   .nav-item {
     color: $j-white;
@@ -87,6 +89,7 @@
     position: relative;
     transition: 0.4s;
     font-size: 22px;
+    padding: 0.3rem;
 
     &::after {
       content:  '';

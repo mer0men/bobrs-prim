@@ -38,6 +38,18 @@ export default {
         speed: 700,
         responsive: [
           {
+            breakpoint: 780,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false,
+              arrows: false,
+              centerMode: false,
+              swipeToSlide: true
+            }
+          },
+          {
             breakpoint: 480,
             settings: {
               slidesToShow: 2,
@@ -83,7 +95,7 @@ export default {
     transition: 0.7s;
     transform: translateY(-9%) scale(0.8);
 
-    @media (max-width: 480px) {
+    @media (max-width: 780px) {
       width: 100%;
       transform: none;
     }
@@ -92,7 +104,7 @@ export default {
   .slick-current {
     .item {
       transform: translateY(9%) scale(0.8);
-      @media (max-width: 480px) {
+      @media (max-width: 780px) {
         width: 100%;
         transform: none;
       }
@@ -101,8 +113,7 @@ export default {
 }
 
 .laders__header {
-  padding-left: 10.5vw;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     text-align: left;
     width: 100%;
     transform: none;

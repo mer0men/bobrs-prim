@@ -30,6 +30,18 @@ export default {
         speed: 700,
         responsive: [
           {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false,
+              arrows: false,
+              centerMode: false,
+              swipeToSlide: true
+            }
+          },
+          {
             breakpoint: 480,
             settings: {
               slidesToShow: 2,
@@ -73,7 +85,7 @@ export default {
 
   .item {
     transform: scale(0.75);
-    @media (max-width: 480px) {
+    @media (max-width: 780px) {
       transform: none;
     }
   }
@@ -81,7 +93,7 @@ export default {
     .item {
       transform: scale(0.9);
 
-      @media (max-width: 480px) {
+      @media (max-width: 780px) {
         transform: none;
       }
     }

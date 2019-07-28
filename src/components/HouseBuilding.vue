@@ -48,6 +48,17 @@ export default {
         speed: 700,
         responsive: [
           {
+            breakpoint: 780,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+              swipeToSlide: true,
+              arrows: false
+            }
+          },
+          {
             breakpoint: 480,
             settings: {
               slidesToShow: 1,
@@ -109,7 +120,7 @@ export default {
 
   .slick-slider {
     width: 85%;
-    @media (max-width: 480px) {
+    @media (max-width: 780px) {
       width: 100%;
     }
   }

@@ -56,7 +56,7 @@ export default {
   width: 100%;
   overflow-x: hidden;
 
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     overflow-y: hidden;
     background: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
@@ -81,7 +81,12 @@ export default {
 
   .block {
     padding: 70px;
-    @media (max-width: 480px) {
+
+    @media (max-width: 1200px) {
+      padding:  30px 10px;
+    }
+
+    @media (max-width: 780px) {
       padding:  30px 10px;
       background: rgba(0, 0, 0, 0);
     }
@@ -96,7 +101,7 @@ export default {
   padding-top: 150px;
   overflow-x: hidden;
 
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     overflow-y: scroll;
     background: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;

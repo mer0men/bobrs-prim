@@ -30,7 +30,7 @@ export default {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  @media (max-width: 480px) {
+  @media (max-width: 780px) {
     display: none;
   }
 }
@@ -72,7 +72,9 @@ export default {
   transition: 0.3s;
 
   .arrow {
-    padding-bottom: 1.3vw;
+    // padding-bottom: 1.3vw;
+    height: 40px;
+    line-height: 0px;
 
     &::selection {
       background: transparent;
