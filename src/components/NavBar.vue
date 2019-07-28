@@ -10,10 +10,13 @@
           <path d="M1.2417 4.16583L31.9031 1.26984L62.9981 3.62954" stroke="white" stroke-width="2"/>
         </svg>
         <span class="block-name">{{ blockName }}</span>
+        <div @click="togleMenu" class="togle-btn">
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12H18V10H0V12ZM0 7H18V5H0V7ZM0 0V2H18V0H0Z" fill="white"/>
+            </svg>
+        </div>  
         <div class="right-menu">
-          <div class="togle-btn">
-            X
-          </div>
+          
         </div>
       </div>
     </div>
@@ -77,6 +80,9 @@ export default {
     }
   },
   methods: {
+    togleMenu() {
+      alert('as')
+    },
     handleScroll: function (evt, el) {
       let Y = window.scrollY
       if (Y > this.aboutPos && Y < this.houseBuildingPos) { this.blockName = 'О нас' }
@@ -142,6 +148,15 @@ export default {
       align-items: center
     }
 
+    .togle-btn {
+      position: absolute;
+      right: 20px;
+      z-index: 10002;
+      color: red;
+      width: 20px;
+      height: 20px;
+    }
+
     .menu {
       position: relative;
       width: 100%;
@@ -203,13 +218,6 @@ export default {
         background-size: cover;
         transition: 0.7s;
         transform: translateX(100%);
-
-        .togle-btn {
-          position: absolute;
-          left: -20px;
-          z-index: 10002;
-          color: red;
-        }
       }
     }
 
