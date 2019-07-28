@@ -45,7 +45,8 @@ export default {
               infinite: true,
               dots: false,
               arrows: false,
-              centerMode: false
+              centerMode: false,
+              swipeToSlide: true
             }
           }
         ]

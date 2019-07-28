@@ -34,6 +34,7 @@ export default {
     Slick
   },
   data () {
+    swipeToSlide: true
     return {
       sliderItems: [],
       slideCount: 4,
@@ -53,7 +54,8 @@ export default {
               slidesToScroll: 1,
               infinite: true,
               dots: false,
-              arrows: false
+              arrows: false,
+              swipeToSlide: true
             }
           }
         ]

@@ -58,9 +58,8 @@ export default {
 
   @media (max-width: 480px) {
     overflow-y: hidden;
-    background: url(../assets/mobBg.png);
+    background: rgba(0, 0, 0, 0);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: 100% auto;
 
     &:before {
@@ -71,7 +70,7 @@ export default {
       top: 0;
       width: 100%;
       height: 100%;
-      z-index: -10;
+      z-index: 0;
       background: url(../assets/mobBg.png) no-repeat center center;
       -webkit-background-size: cover;
       -moz-background-size: cover;
@@ -84,6 +83,7 @@ export default {
     padding: 70px;
     @media (max-width: 480px) {
       padding:  30px 10px;
+      background: rgba(0, 0, 0, 0);
     }
   }
 }

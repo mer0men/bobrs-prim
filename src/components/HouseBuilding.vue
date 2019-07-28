@@ -54,6 +54,7 @@ export default {
               slidesToScroll: 1,
               infinite: true,
               dots: false,
+              swipeToSlide: true,
               arrows: false
             }
           }

@@ -36,7 +36,8 @@ export default {
               slidesToScroll: 2,
               infinite: true,
               dots: false,
-              arrows: false
+              arrows: false,
+              swipeToSlide: true
             }
           }
         ]
