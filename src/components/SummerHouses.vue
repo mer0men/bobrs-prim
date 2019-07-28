@@ -21,14 +21,14 @@
     <div @click="prev">
       <slider-btn  style="right: 5%; bottom: 25%" :direction="'left'"></slider-btn>
     </div>
-    <galley-link :type="'summer-houses'"></galley-link>
+    <gallery-link :type="'summer-houses'"></gallery-link>
   </div>
 </template>
 
 <script>
 import Slick from 'vue-slick'
 import SliderBtn from '@/components/SliderButton'
-import GalleryLink from './GalleryLink'
+import GalleryLink from '@/components/GalleryLink'
 
 export default {
   components: {

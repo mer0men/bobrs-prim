@@ -28,7 +28,7 @@
 <script>
 import Slick from 'vue-slick'
 import SliderBtn from '@/components/SliderButton'
-import GalleryLink from './GalleryLink'
+import GalleryLink from '@/components/GalleryLink'
 
 export default {
   components: {

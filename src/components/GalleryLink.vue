@@ -13,6 +13,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '../assets/variables.scss';
+
   .rl {
     color: $j-black;
     transition: 0.4s;

@@ -1,5 +1,5 @@
 <template>
-  <div class="slider-btn">
+  <div @click="scrollMethod" class="slider-btn">
     <div class="f-border">
       <div class="s-border">
         <div class="btn">
@@ -16,6 +16,9 @@ export default {
   props: {
     direction: {
       required: true
+    },
+    scrollMethod: {
+      required: false
     }
   }
 }
@@ -29,7 +32,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 1001;
   @media (max-width: 780px) {
     display: none;
   }
