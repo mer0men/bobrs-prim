@@ -1,5 +1,5 @@
 <template>
-  <div ref="sh" v-scroll="handleScroll" id="hb" class="summer-houses block">
+  <div id="summer-houses" ref="sh" v-scroll="handleScroll" class="summer-houses block">
     <h2 class="summer-houses__header">беседки</h2>
     <slick ref="slick" :options="slickOptions">
         <div class="item">

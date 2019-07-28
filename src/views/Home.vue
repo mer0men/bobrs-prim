@@ -87,7 +87,7 @@ export default {
     }
 
     @media (max-width: 780px) {
-      padding:  30px 10px;
+      padding:  45px 10px;
       background: rgba(0, 0, 0, 0);
     }
   }

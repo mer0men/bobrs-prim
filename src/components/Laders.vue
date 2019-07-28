@@ -1,5 +1,5 @@
 <template>
-  <div ref="la" v-scroll="handleScroll" class="laders block">
+  <div id="laders" ref="la" v-scroll="handleScroll" class="laders block">
     <h2 class="laders__header">Лестницы</h2>
     <slick ref="slick" :options="slickOptions">
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534409/bobrs-prim/IMG-20160129-WA0016_uuzec5.jpg" alt=""></div>
@@ -114,6 +114,7 @@ export default {
 
 .laders__header {
   @media (max-width: 780px) {
+    padding-left: 10.5vw;
     text-align: left;
     width: 100%;
     transform: none;

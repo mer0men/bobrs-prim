@@ -1,5 +1,5 @@
 <template>
-  <div ref="hi" v-scroll="handleScroll" class="house-items block">
+  <div id="house-items" ref="hi" v-scroll="handleScroll" class="house-items block">
     <h2 class="house-items__header">ПРЕДМЕТЫ ИНТЕРЬЕРА</h2>
     <slick ref="slick" :options="slickOptions">
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534411/bobrs-prim/P1010040_pxzoqs.jpg" alt=""></div>
@@ -85,6 +85,8 @@ export default {
   transition: 1s;
   opacity: 0;
   transform: translateX(50%);
+
+  min-height: 200px;
 }
 
 .house-items__header {

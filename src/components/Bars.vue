@@ -1,5 +1,5 @@
 <template>
-  <div ref="ba" v-scroll="handleScroll" class="bars block">
+  <div id="bars" ref="ba" v-scroll="handleScroll" class="bars block">
     <h2 class="bars__header">Бары</h2>
     <slick ref="slick" :options="slickOptions">
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534412/bobrs-prim/P1010106_nagura.jpg" alt=""></div>

@@ -46,6 +46,10 @@
   font-family: 'Worksans';
   flex-wrap: wrap;
 
+  @media (max-width: 780px) {
+    background: rgba(0, 0, 0, 0);
+  }
+
   @media (max-width: 1200px) {
     height: auto;
   }

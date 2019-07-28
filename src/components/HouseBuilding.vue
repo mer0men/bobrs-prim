@@ -1,5 +1,5 @@
 <template>
-  <div ref="hb" v-scroll="handleScroll" id="hb" class="house-building block">
+  <div ref="hb" v-scroll="handleScroll" id="house-building" class="house-building block">
     <h2 class="house-building__header">домостроение</h2>
     <slick ref="slick" :options="slickOptions">
         <div class="item">
@@ -106,6 +106,7 @@ export default {
   opacity: 0;
   transition: 0.7s;
   transform: translateY(-30%);
+  min-height: 350px;
 
   .slick-current {
     .item {

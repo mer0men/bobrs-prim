@@ -1,5 +1,5 @@
 <template>
-  <div class="contacts">
+  <div id="contacts" class="contacts">
     <h2>КАК НАС НАЙТИ</h2>
     <div class="my-map">
       <GmapMap
