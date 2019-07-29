@@ -39,6 +39,7 @@ export default {
         focusOnSelect: true,
         autoplaySpeed: 2500,
         speed: 700,
+        draggable: false,
         responsive: [
           {
             breakpoint: 780,
