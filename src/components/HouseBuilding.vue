@@ -3,16 +3,28 @@
     <h2 class="house-building__header">домостроение</h2>
     <slick ref="slick" :options="slickOptions">
         <div class="item">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1564113248/House-building/DYM-25_zgamgl.jpg">
+        </div>
+        <div class="item">
           <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534410/bobrs-prim/P1010031_nxnzjy.jpg">
         </div>
         <div class="item">
           <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534407/bobrs-prim/IMG_1031_ekpkyr.jpg">
         </div>
         <div class="item">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1564113248/House-building/DYM-27_noq2fv.jpg">
+        </div>
+        <div class="item">
           <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534409/bobrs-prim/IMG_5526_yyrsbl.jpg">
         </div>
         <div class="item">
           <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534407/bobrs-prim/IMG_5524_c0cxjo.jpg">
+        </div>
+        <div class="item">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1564113270/House-building/DYM-53_grg4du.jpg">
+        </div>
+        <div class="item">
+          <img src="https://res.cloudinary.com/meromen/image/upload/w_700,ar_1:1,c_fill,g_auto,e_art:hokusai/v1564113246/House-building/DYM-80_af3r0m.jpg">
         </div>
     </slick>
     <div @click="next">
