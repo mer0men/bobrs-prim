@@ -16,7 +16,7 @@
             </svg>
         </div>   -->
         <div class="right-menu">
-          
+
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@ export default {
     }
   },
   methods: {
-    togleMenu() {
+    togleMenu () {
       alert('as')
     },
     handleScroll: function (evt, el) {

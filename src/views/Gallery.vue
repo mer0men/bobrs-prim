@@ -147,6 +147,10 @@ export default {
   padding-top: 0.3rem;
   position: relative;
 
+  svg {
+    height: 100px;
+  }
+
   .photo-viewer {
     position: relative;
     padding: 3rem;

@@ -5,7 +5,7 @@
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534399/bobrs-prim/%D0%A4%D0%BE%D1%82%D0%BE0188%D0%B0_ohc7q5.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534401/bobrs-prim/11_tbw2nf.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534401/bobrs-prim/8_hcjk9m.jpg" alt=""></div>
-      <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/ar_1:1,c_fill,dn_74,e_art:hairspray,g_north,w_550,x_0,y_0/v1563534409/bobrs-prim/IMG-20160414-WA0044_oatvdw.jpg" alt=""></div>     
+      <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/ar_1:1,c_fill,dn_74,e_art:hairspray,g_north,w_550,x_0,y_0/v1563534409/bobrs-prim/IMG-20160414-WA0044_oatvdw.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534403/bobrs-prim/23_jj4q4t.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534412/bobrs-prim/P1010191_l7vm9c.jpg" alt=""></div>
       <div class="item"><img src="https://res.cloudinary.com/meromen/image/upload/w_550,ar_1:1,c_fill,g_auto,e_art:hokusai/v1563534404/bobrs-prim/20180215_092332_vz2tky.jpg" alt=""></div>
