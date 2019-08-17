@@ -50,11 +50,6 @@
         duration: 1100
       }">беседки</a>
       <a class="nav-item" href="#" v-scroll-to="{
-        el: '.partners',
-        offset: -100,
-        duration: 1100
-      }">наши партнеры</a>
-      <a class="nav-item" href="#" v-scroll-to="{
         el: '.bars',
         offset: -100,
         duration: 1100
