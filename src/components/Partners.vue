@@ -2,11 +2,19 @@
   <div class="partners block">
     <h2 style="padding-top: 5%; padding-left: 10.5vw; text-align: left;">Партнеры</h2>
     <div class="list">
-      <div v-for="(partner, index) in partners" :key="index" class="part">
+      <div class="images">
+        <img @click="openNewTab('https://neocomfort.ru/')" class="img-cont" src="../assets/neoLogo.png" alt="" srcset="">
+        <img @click="openNewTab('https://nois.su/')" class="img-cont" src="../assets/noisLogo.svg" alt="" srcset="">
+        <img @click="openNewTab('http://www.kvarts-dv.ru/')" class="img-cont" src="../assets/kvarcLogo.png" alt="" srcset="">
+        <img @click="openNewTab('http://www.zenitm.ru/')" class="img-cont" src="../assets/zenitLogo.png" alt="" srcset="">
+        <img @click="openNewTab('https://www.instagram.com/gj_d_s/?hl=ru')" class="img-cont" src="../assets/dsLogo.jpg" alt="" srcset="">
+        <img @click="openNewTab('https://www.steklolux.com/')" style="width: 50%" class="img-cont" src="../assets/stekloluxLogo.svg" alt="" srcset="">
+      </div>
+      <!-- <div v-for="(partner, index) in partners" :key="index" class="part">
         <span>{{ partner.name }}</span>
         <span>{{ partner.phone }}</span>
         <a :href="partners.site" target="_blank">{{ partner.site }}</a>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -28,6 +36,11 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    openNewTab (url) {
+      window.open(url, '_blank').focus()
+    }
   }
 }
 </script>
@@ -48,6 +61,21 @@ export default {
 
     @media (max-width: 780px) {
       display: none;
+    }
+  }
+
+  .images {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .img-cont {
+      width: 28%;
+      margin: 3%;
+
+      cursor: pointer;
     }
   }
 

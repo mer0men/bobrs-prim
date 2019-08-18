@@ -90,11 +90,7 @@ export default {
           'https://res.cloudinary.com/meromen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1566002326/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_1_dsimut.jpg',
           'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_600,g_face/v1566002332/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_10_p2gs30.jpg',
           'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_600,g_face/v1566002346/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_8_ztlywf.jpg',
-          'https://res.cloudinary.com/meromen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1566002340/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_3_y0fzoc.jpg',
-          'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_600,g_face/v1566002340/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_4_fqzabl.jpg',
-          'https://res.cloudinary.com/meromen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1566002347/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_11_tgm9ui.jpg',
-          'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_600,g_face/v1566002350/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_12_pm6b9h.jpg',
-          'https://res.cloudinary.com/meromen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1566002350/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_6_qqlnqc.jpg'
+          'https://res.cloudinary.com/meromen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1566002340/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_3_y0fzoc.jpg',          
         ]
         break
       case 'house-items':
@@ -120,7 +116,11 @@ export default {
           'https://res.cloudinary.com/meromen/image/upload/c_scale,w_517/v1564124319/house-items/DYM-63_lrjzrb.jpg',
           'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_400,g_face/v1563534397/bobrs-prim/DSC_0020_ko6rqd.jpg',
           'https://res.cloudinary.com/meromen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1563534414/bobrs-prim/P1110058_imrx9j.jpg',
-          'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_1000,g_face/v1563534408/bobrs-prim/IMG-20150409-WA0002_feeyyu.jpg'
+          'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_1000,g_face/v1563534408/bobrs-prim/IMG-20150409-WA0002_feeyyu.jpg',
+          'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_600,g_face/v1566002340/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_4_fqzabl.jpg',
+          'https://res.cloudinary.com/meromen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1566002347/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_11_tgm9ui.jpg',
+          'https://res.cloudinary.com/meromen/image/upload/c_thumb,w_600,g_face/v1566002350/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_12_pm6b9h.jpg',
+          'https://res.cloudinary.com/meromen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1566002350/bobrs-prim/%D0%BA%D0%BE%D1%82%D1%82%D0%B5%D0%B4%D0%B6_6_qqlnqc.jpg'
         ]
         break
       case 'summer-houses':
